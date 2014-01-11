@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<SurfaceView
+    android:id="@+id/CameraView"
+    android:layout_width="640px"
+    android:layout_height="480px"
+    android:visibility="gone" >
+</SurfaceView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/btnTakePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Pic" />
+
+    <Button
+        android:id="@+id/btnCopyFileOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copy pic to SD" />
+
+    <Button
+        android:id="@+id/btnShowPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show pic" />
+
+</LinearLayout>
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="VFS Image:" />
+
+<ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scaleType="fitCenter"
+    android:src="@drawable/ic_launcher" />
+
+</LinearLayout>
